@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ashok Kumar Reddy | EXIM Documentation Specialist</title>
+<meta name="description" content="Ashok Kumar Reddy — 4+ years Import & Export Documentation, India & Canada. Open to opportunities in Bengaluru."/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — LUXURY EDITORIAL DARK
+═══════════════════════════════════════════ */
+:root{
+  --night:#07090E;
+  --dark:#0D1117;
+  --card:#131923;
+  --card2:#1A2232;
+  --blue:#1A6FFF;
+  --blue2:#4D95FF;
+  --sky:#00CAFF;
+  --teal:#00E5B4;
+  --gold:#F0A500;
+  --red:#E53E3E;
+  --fog:#8A9BB8;
+  --mist:#C5D3E8;
+  --border:rgba(255,255,255,.07);
+  --border2:rgba(255,255,255,.12);
+  --ca:#C8102E;
+  --in:#E86610;
+  --white:#FFFFFF;
+  --sh:0 4px 24px rgba(0,0,0,.4);
+  --sh2:0 16px 64px rgba(0,0,0,.5);
+}
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Syne',sans-serif;
+  background:var(--night);
+  color:var(--mist);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+::selection{background:var(--blue);color:#fff}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
+
+/* ════════════════════
+   NAVBAR
+════════════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  height:60px;padding:0 5%;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:all .35s;
+}
+nav.solid{
+  background:rgba(7,9,14,.92);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+}
+.logo{
+  font-family:'Fraunces',serif;
+  font-size:1.1rem;font-weight:700;
+  color:#fff;letter-spacing:-.01em;
+  display:flex;align-items:center;gap:9px;
+}
+.logo-mark{
+  width:30px;height:30px;border-radius:8px;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--sky) 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.65rem;font-weight:800;color:#fff;letter-spacing:.03em;
+}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{
+  padding:6px 12px;border-radius:7px;
+  font-size:.78rem;font-weight:600;
+  color:var(--fog);letter-spacing:.02em;
+  transition:all .18s;
+}
+.nav-links a:hover,.nav-links a.on{color:#fff;background:rgba(255,255,255,.07)}
+.nav-cta{
+  padding:7px 18px!important;
+  background:var(--blue)!important;
+  color:#fff!important;font-weight:700!important;
+  border-radius:9px!important;
+  box-shadow:0 4px 18px rgba(26,111,255,.35)!important;
+}
+.nav-cta:hover{background:var(--blue2)!important;transform:translateY(-1px)}
+.hbg{display:none;flex-direction:column;gap:4px;padding:4px;cursor:pointer}
+.hbg span{display:block;width:20px;height:1.5px;background:#fff;border-radius:2px;transition:all .28s}
+.hbg.o span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.hbg.o span:nth-child(2){opacity:0}
+.hbg.o span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+/* ════════════════════
+   HERO
+════════════════════ */
+#home{
+  min-height:100vh;
+  padding-top:60px;
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  background:var(--night);
+}
+.hero-canvas{position:absolute;inset:0;z-index:0}
+.hero-photo{
+  position:absolute;right:0;top:0;bottom:0;width:55%;
+  overflow:hidden;
+}
+.hero-photo img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(.25) saturate(.6);
+}
+.hero-photo::before{
+  content:'';position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,var(--night) 0%,rgba(7,9,14,.7) 50%,transparent 100%);
+}
+.hero-photo::after{
+  content:'';position:absolute;inset:0;z-index:1;
+  background:linear-gradient(0deg,var(--night) 0%,transparent 40%);
+}
+.orb1{
+  position:absolute;top:-20%;left:20%;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle at center,rgba(26,111,255,.15) 0%,transparent 65%);
+  filter:blur(80px);
+  animation:floatOrb1 10s ease-in-out infinite alternate;
+}
+.orb2{
+  position:absolute;bottom:-10%;right:30%;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,202,255,.08) 0%,transparent 65%);
+  filter:blur(60px);
+  animation:floatOrb2 14s ease-in-out infinite alternate;
+}
+@keyframes floatOrb1{to{transform:translate(5%,8%) scale(1.1)}}
+@keyframes floatOrb2{to{transform:translate(-5%,-8%) scale(1.15)}}
+.grid-lines{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:80px 80px;
+}
+
+.hero-wrap{
+  position:relative;z-index:2;
+  max-width:1200px;margin:0 auto;width:100%;
+  padding:80px 5%;
+  display:grid;grid-template-columns:1.1fr 0.9fr;
+  gap:60px;align-items:center;
+}
+
+/* LEFT */
+.h-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(0,202,255,.07);
+  border:1px solid rgba(0,202,255,.2);
+  border-radius:100px;
+  padding:5px 15px;
+  color:var(--sky);
+  font-size:.7rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:22px;
+  animation:up .7s ease both;
+}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--sky);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,202,255,.5)}50%{box-shadow:0 0 0 6px rgba(0,202,255,0)}}
+.h1{
+  font-family:'Fraunces',serif;
+  font-size:clamp(3rem,7vw,5.5rem);
+  color:#fff;line-height:1.02;
+  letter-spacing:-.03em;
+  margin-bottom:14px;
+  animation:up .7s .08s ease both;
+}
+.h1 em{
+  font-style:italic;
+  background:linear-gradient(120deg,var(--sky),var(--teal));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.h-role{
+  font-size:.95rem;font-weight:500;
+  color:var(--fog);
+  margin-bottom:24px;
+  animation:up .7s .14s ease both;
+  letter-spacing:.02em;
+}
+.h-flags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px;animation:up .7s .18s ease both}
+.flag-pill{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:5px 14px;border-radius:100px;
+  font-size:.72rem;font-weight:700;border:1px solid;
+}
+.fp-in{background:rgba(232,102,16,.1);border-color:rgba(232,102,16,.3);color:#FFA060}
+.fp-ca{background:rgba(200,16,46,.1);border-color:rgba(200,16,46,.3);color:#FF7080}
+.h-desc{
+  color:rgba(255,255,255,.35);line-height:1.85;font-size:.9rem;
+  margin-bottom:34px;max-width:480px;
+  animation:up .7s .22s ease both;
+}
+.h-nums{display:flex;gap:0;margin-bottom:36px;animation:up .7s .26s ease both}
+.hnum{padding-right:28px}
+.hnum+.hnum{padding-left:28px;border-left:1px solid rgba(255,255,255,.08)}
+.hnum-n{font-family:'Fraunces',serif;font-size:2.6rem;color:#fff;font-weight:600;line-height:1}
+.hnum-l{font-size:.65rem;color:var(--fog);margin-top:4px;font-weight:600;text-transform:uppercase;letter-spacing:.07em}
+.h-btns{display:flex;gap:12px;flex-wrap:wrap;animation:up .7s .3s ease both}
+.btn-p{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 26px;
+  background:linear-gradient(135deg,var(--blue),var(--blue2));
+  color:#fff;font-weight:700;font-size:.85rem;
+  border-radius:11px;border:none;font-family:inherit;cursor:pointer;
+  box-shadow:0 6px 28px rgba(26,111,255,.35);
+  transition:transform .2s,box-shadow .2s;letter-spacing:.02em;
+}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(26,111,255,.5)}
+.btn-g{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 26px;
+  background:rgba(255,255,255,.05);
+  color:rgba(255,255,255,.65);font-weight:600;font-size:.85rem;
+  border-radius:11px;border:1px solid var(--border2);font-family:inherit;cursor:pointer;
+  transition:all .2s;letter-spacing:.02em;
+}
+.btn-g:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.22)}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* RIGHT — Profile Card */
+.pcard{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;padding:28px;
+  position:relative;overflow:hidden;
+  animation:up .7s .2s ease both;
+  box-shadow:var(--sh2);
+}
+.pcard::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--blue),var(--sky),var(--teal));
+}
+.pc-av{
+  width:68px;height:68px;border-radius:16px;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--blue2) 50%,var(--sky) 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-size:1.8rem;font-weight:700;color:#fff;
+  margin-bottom:16px;box-shadow:0 10px 28px rgba(26,111,255,.4);
+}
+.pc-name{font-family:'Fraunces',serif;font-size:1.4rem;color:#fff;margin-bottom:3px;font-weight:600}
+.pc-role{color:var(--sky);font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-bottom:16px}
+.pc-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.chip{padding:3px 11px;border-radius:100px;background:rgba(26,111,255,.12);border:1px solid rgba(26,111,255,.2);color:rgba(255,255,255,.6);font-size:.67rem;font-weight:600}
+.pc-div{height:1px;background:var(--border);margin:16px 0}
+.pc-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;font-size:.78rem;color:rgba(255,255,255,.4)}
+.pc-row i{color:var(--sky);width:14px;flex-shrink:0}
+.pc-row a{color:rgba(255,255,255,.65);transition:color .18s}
+.pc-row a:hover{color:var(--sky)}
+.pc-badge{
+  margin-top:16px;padding:11px 14px;
+  background:rgba(240,165,0,.07);border:1px solid rgba(240,165,0,.18);
+  border-radius:11px;display:flex;align-items:center;gap:9px;
+}
+.pc-badge i{color:var(--gold)}
+.pc-badge span{color:rgba(255,255,255,.55);font-size:.76rem;line-height:1.45}
+.pc-badge strong{color:var(--gold)}
+
+/* ════════════════════
+   SECTIONS — BASE
+════════════════════ */
+.sec{padding:96px 5%}
+.sec-alt{background:var(--dark)}
+.sec-white{background:#fff}
+.inner{max-width:1160px;margin:0 auto}
+.ew{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;color:var(--sky)}
+.ew-bar{width:22px;height:1.5px;background:linear-gradient(90deg,var(--sky),var(--teal));border-radius:2px}
+.st{font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,3rem);color:#fff;line-height:1.12;letter-spacing:-.02em;margin-bottom:12px}
+.ss{color:var(--fog);font-size:.91rem;line-height:1.85;max-width:560px}
+/* on light bg */
+.on-light .ew{color:var(--blue)}
+.on-light .ew-bar{background:linear-gradient(90deg,var(--blue),var(--blue2))}
+.on-light .st{color:#0D1117}
+.on-light .ss{color:#4B5A72}
+
+/* ════════════════════
+   ABOUT
+════════════════════ */
+.about-g{display:grid;grid-template-columns:1.2fr 0.8fr;gap:72px;align-items:start;margin-top:52px}
+.at p{color:var(--fog);line-height:1.9;font-size:.9rem;margin-bottom:14px}
+.at strong{color:var(--mist)}
+.dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.dc{border-radius:14px;padding:18px 20px;border:1px solid}
+.dc-in{background:rgba(232,102,16,.06);border-color:rgba(232,102,16,.15)}
+.dc-ca{background:rgba(200,16,46,.05);border-color:rgba(200,16,46,.13)}
+.dc h4{font-size:.8rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.dc-in h4{color:var(--in)}.dc-ca h4{color:var(--ca)}
+.dc ul{list-style:none}
+.dc li{font-size:.75rem;color:var(--fog);padding:3px 0;display:flex;align-items:center;gap:8px}
+.dc li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--border2);flex-shrink:0}
+.mini-kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.mk{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;transition:all .22s}
+.mk:hover{border-color:rgba(26,111,255,.3);box-shadow:var(--sh)}
+.mk i{color:var(--blue);margin-bottom:8px;font-size:.95rem}
+.mk h4{color:#fff;font-size:.8rem;font-weight:700;margin-bottom:2px}
+.mk p{color:var(--fog);font-size:.7rem}
+/* sidebar */
+.aside-sticky{position:sticky;top:74px}
+.aside-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:var(--sh)}
+.aside-card h3{font-family:'Fraunces',serif;font-size:1.05rem;color:#fff;margin-bottom:18px;font-weight:600}
+.krow{display:flex;gap:11px;padding:12px 0;border-bottom:1px solid var(--border)}
+.krow:last-child{border-bottom:none;padding-bottom:0}
+.kr-ico{width:32px;height:32px;border-radius:8px;background:rgba(26,111,255,.12);display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:.78rem;flex-shrink:0;margin-top:1px}
+.krow h4{color:var(--mist);font-size:.8rem;font-weight:700;margin-bottom:2px}
+.krow p{color:var(--fog);font-size:.7rem;line-height:1.55}
+.aside-img{margin-top:14px;border-radius:14px;overflow:hidden;position:relative;height:150px}
+.aside-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.aside-img:hover img{transform:scale(1.05)}
+.aside-img-lbl{position:absolute;bottom:10px;left:10px;background:rgba(7,9,14,.82);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:6px 11px;color:#fff;font-size:.68rem;font-weight:700;display:flex;align-items:center;gap:6px}
+.aside-img-lbl i{color:var(--teal)}
+
+/* ════════════════════
+   SKILLS
+════════════════════ */
+.img-trio{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:32px 0 44px}
+.itc{border-radius:14px;overflow:hidden;position:relative;height:140px}
+.itc img{width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:brightness(.75)}
+.itc:hover img{transform:scale(1.07)}
+.itc-lbl{position:absolute;bottom:0;left:0;right:0;padding:8px 12px;background:linear-gradient(transparent,rgba(7,9,14,.88));color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.04em}
+.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.sk{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;position:relative;overflow:hidden;transition:all .22s}
+.sk:hover{border-color:rgba(26,111,255,.35);transform:translateY(-3px);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+.sk::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--blue),var(--sky));transform:scaleY(0);transform-origin:bottom;transition:transform .3s}
+.sk:hover::after{transform:scaleY(1)}
+.sk-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.sk-ic{width:40px;height:40px;border-radius:10px;background:rgba(26,111,255,.1);display:flex;align-items:center;justify-content:center;font-size:.95rem;color:var(--blue);flex-shrink:0}
+.sk h3{color:#fff;font-size:.87rem;font-weight:700}
+.sk p{color:var(--fog);font-size:.75rem;line-height:1.7;margin-bottom:12px}
+.bar-track{height:2px;background:rgba(255,255,255,.07);border-radius:2px;margin-bottom:5px}
+.bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--blue2),var(--sky));width:0;transition:width 1.4s cubic-bezier(.4,0,.2,1) .1s}
+.bar-fill.go{width:var(--w)}
+.bar-meta{display:flex;justify-content:space-between;margin-bottom:8px}
+.bar-lvl{font-size:.66rem;font-weight:700;color:var(--sky)}
+.bar-pct{font-size:.66rem;color:var(--fog)}
+.sk-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 9px;border-radius:100px;font-size:.64rem;font-weight:700}
+.tg-in{background:rgba(232,102,16,.1);color:var(--in)}
+.tg-ca{background:rgba(200,16,46,.08);color:var(--ca)}
+.tg-bo{background:rgba(26,111,255,.1);color:var(--blue2)}
+
+/* ════════════════════
+   EXPERIENCE
+════════════════════ */
+.exp-wrap{margin-top:48px}
+.exp-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;overflow:hidden;
+  box-shadow:var(--sh2);
+  transition:border-color .3s;
+}
+.exp-card:hover{border-color:rgba(26,111,255,.3)}
+.exp-banner{position:relative;height:210px;overflow:hidden}
+.exp-banner img{width:100%;height:100%;object-fit:cover;filter:brightness(.35) saturate(.7);transition:transform .6s}
+.exp-card:hover .exp-banner img{transform:scale(1.04)}
+.exp-banner-content{position:absolute;inset:0;display:flex;align-items:flex-end;padding:24px 28px}
+.exp-banner-content h2{font-family:'Fraunces',serif;font-size:1.55rem;color:#fff;font-weight:600;line-height:1.2}
+.exp-banner-content p{color:var(--sky);font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px}
+.exp-body{padding:28px}
+.ep-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.ep{padding:4px 12px;border-radius:100px;font-size:.7rem;font-weight:700}
+.ep-a{background:rgba(0,202,255,.1);color:var(--sky);border:1px solid rgba(0,202,255,.2)}
+.ep-b{background:rgba(26,111,255,.1);color:var(--blue2);border:1px solid rgba(26,111,255,.2)}
+.ep-c{background:rgba(232,102,16,.1);color:#FFA060;border:1px solid rgba(232,102,16,.2)}
+.exp-co{display:flex;align-items:center;gap:11px;margin-bottom:8px}
+.exp-co-icon{width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--blue2));display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:800;color:#fff;letter-spacing:-.02em;flex-shrink:0}
+.exp-co-name{color:var(--blue2);font-size:.88rem;font-weight:700}
+.exp-loc-row{display:flex;align-items:center;gap:6px;color:var(--fog);font-size:.75rem;margin-bottom:20px}
+.exp-ul{display:flex;flex-direction:column;gap:9px}
+.exp-ul li{list-style:none;display:flex;gap:11px;font-size:.84rem;color:var(--fog);line-height:1.65}
+.exp-ul li::before{content:'';width:5px;height:5px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));flex-shrink:0;margin-top:7px}
+
+/* ════════════════════
+   ACHIEVEMENTS
+════════════════════ */
+.ach-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:48px}
+.ach{
+  border-radius:18px;padding:26px;
+  border:1px solid rgba(255,255,255,.06);
+  position:relative;overflow:hidden;
+  transition:transform .22s,box-shadow .22s;
+  background:var(--card);
+}
+.ach:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.ach::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.ach-go::before{background:linear-gradient(90deg,var(--gold),#FDE68A)}
+.ach-bl::before{background:linear-gradient(90deg,var(--blue),var(--sky))}
+.ach-gr::before{background:linear-gradient(90deg,#10B981,var(--teal))}
+.ach-rd::before{background:linear-gradient(90deg,var(--ca),#F87171)}
+.ach-glow{position:absolute;top:-40px;right:-40px;width:130px;height:130px;border-radius:50%;opacity:.05}
+.ach-go .ach-glow{background:var(--gold)}
+.ach-bl .ach-glow{background:var(--sky)}
+.ach-gr .ach-glow{background:#10B981}
+.ach-rd .ach-glow{background:var(--ca)}
+.ach-num{font-family:'Fraunces',serif;font-size:3.2rem;font-weight:600;line-height:1;margin-bottom:9px}
+.ach-go .ach-num{color:var(--gold)}
+.ach-bl .ach-num{color:var(--sky)}
+.ach-gr .ach-num{color:var(--teal)}
+.ach-rd .ach-num{color:#FF8A8A}
+.ach-label{color:#fff;font-size:.88rem;font-weight:700;margin-bottom:6px}
+.ach-desc{color:var(--fog);font-size:.76rem;line-height:1.7}
+.ach-banner{margin-top:32px;border-radius:18px;overflow:hidden;position:relative;height:190px}
+.ach-banner img{width:100%;height:100%;object-fit:cover;filter:brightness(.3) saturate(.6)}
+.ach-banner-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+.ach-banner-txt span{color:var(--sky);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.ach-banner-txt h3{font-family:'Fraunces',serif;font-size:clamp(1.3rem,3vw,2rem);color:#fff;font-weight:600}
+.ach-banner-txt p{color:rgba(255,255,255,.45);font-size:.8rem;margin-top:5px}
+
+/* ════════════════════
+   KNOWLEDGE
+════════════════════ */
+.kn-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:48px}
+.kn{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:all .22s}
+.kn:hover{border-color:rgba(26,111,255,.3);transform:translateY(-3px);box-shadow:var(--sh2)}
+.kn-img{height:130px;overflow:hidden}
+.kn-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.65);transition:transform .5s}
+.kn:hover .kn-img img{transform:scale(1.06)}
+.kn-body{padding:18px}
+.kn-ico{
+  width:40px;height:40px;border-radius:11px;
+  background:rgba(26,111,255,.12);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--blue);font-size:1rem;
+  margin-bottom:11px;margin-top:-34px;position:relative;z-index:1;
+  border:2px solid var(--card);box-shadow:var(--sh);
+}
+.kn-ca .kn-ico{background:rgba(200,16,46,.1);color:var(--ca)}
+.kn h3{color:#fff;font-size:.88rem;font-weight:700;margin-bottom:6px}
+.kn p{color:var(--fog);font-size:.76rem;line-height:1.75;margin-bottom:11px}
+.kn-tags{display:flex;flex-wrap:wrap;gap:5px}
+.knt{padding:2px 8px;border-radius:100px;background:rgba(26,111,255,.08);color:var(--blue2);font-size:.64rem;font-weight:700;border:1px solid rgba(26,111,255,.15)}
+.knt-ca{background:rgba(200,16,46,.06);color:var(--ca);border-color:rgba(200,16,46,.15)}
+
+/* ════════════════════
+   RECRUITER
+════════════════════ */
+.rec-g{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.rc{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px;transition:border-color .22s}
+.rc:hover{border-color:rgba(26,111,255,.3)}
+.rc h3{color:#fff;font-size:.88rem;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:9px}
+.rc h3 i{color:var(--sky)}
+.role-list{display:flex;flex-direction:column;gap:7px}
+.ri{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 13px;border-radius:10px;
+  background:rgba(255,255,255,.03);border:1px solid var(--border);
+  color:rgba(255,255,255,.7);font-size:.81rem;font-weight:600;
+  transition:all .18s;
+}
+.ri:hover{background:rgba(26,111,255,.1);border-color:rgba(26,111,255,.25);color:#fff}
+.ri i{color:var(--teal);font-size:.72rem;flex-shrink:0}
+.pref-row{display:flex;gap:11px;margin-bottom:12px;align-items:flex-start}
+.pr-ic{width:32px;height:32px;border-radius:8px;background:rgba(0,202,255,.08);display:flex;align-items:center;justify-content:center;color:var(--sky);flex-shrink:0;font-size:.78rem}
+.pref-row h4{color:var(--mist);font-size:.8rem;font-weight:700;margin-bottom:2px}
+.pref-row p{color:var(--fog);font-size:.75rem;line-height:1.5}
+.avail-bar{
+  grid-column:1/-1;
+  background:linear-gradient(120deg,var(--blue) 0%,var(--blue2) 60%,rgba(77,149,255,.9) 100%);
+  border-radius:16px;padding:24px 28px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  box-shadow:0 12px 40px rgba(26,111,255,.3);
+}
+.avail-bar h3{color:#fff;font-size:1rem;font-weight:700}
+.avail-bar p{color:rgba(255,255,255,.65);font-size:.8rem;margin-top:3px}
+.avail-btns{display:flex;gap:10px}
+
+/* ════════════════════
+   CONTACT
+════════════════════ */
+.ct-g{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;margin-top:48px}
+.ci{display:flex;gap:13px;margin-bottom:16px;align-items:flex-start}
+.ci-ico{width:40px;height:40px;border-radius:11px;background:rgba(26,111,255,.1);display:flex;align-items:center;justify-content:center;color:var(--blue);flex-shrink:0;font-size:.85rem;border:1px solid rgba(26,111,255,.2)}
+.ci h4{font-size:.67rem;color:var(--fog);font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:2px}
+.ci a,.ci span{color:var(--mist);font-size:.86rem;font-weight:600;transition:color .18s}
+.ci a:hover{color:var(--sky)}
+.cf{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px;box-shadow:var(--sh2)}
+.cf h3{font-family:'Fraunces',serif;font-size:1.15rem;color:#fff;margin-bottom:20px;font-weight:600}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fg{margin-bottom:10px}
+.fg label{display:block;font-size:.68rem;font-weight:700;color:var(--mist);margin-bottom:5px;letter-spacing:.05em;text-transform:uppercase}
+.fg input,.fg textarea,.fg select{
+  width:100%;padding:10px 12px;
+  border-radius:9px;border:1px solid var(--border2);
+  background:rgba(255,255,255,.04);
+  font-family:inherit;font-size:.85rem;color:#fff;outline:none;
+  transition:border-color .2s,box-shadow .2s;
+}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,111,255,.12)}
+.fg select option{background:var(--dark);color:#fff}
+.fg textarea{resize:vertical;min-height:88px}
+.fsub{
+  width:100%;padding:12px;
+  background:linear-gradient(135deg,var(--blue),var(--blue2));
+  color:#fff;font-family:inherit;font-size:.88rem;font-weight:700;
+  border:none;border-radius:10px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  box-shadow:0 4px 22px rgba(26,111,255,.3);
+  transition:transform .2s,box-shadow .2s;
+}
+.fsub:hover{transform:translateY(-1px);box-shadow:0 8px 32px rgba(26,111,255,.45)}
+.fok{display:none;text-align:center;padding:24px}
+.fok i{font-size:2.6rem;color:var(--teal);display:block;margin-bottom:10px}
+.fok strong{display:block;color:#fff;margin-bottom:5px}
+.fok span{color:var(--fog);font-size:.84rem}
+
+/* ════════════════════
+   FOOTER
+════════════════════ */
+footer{background:#050710;border-top:1px solid rgba(255,255,255,.05);padding:24px 5%}
+.fi{max-width:1160px;margin:0 auto}
+.fi-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:18px}
+.fbrand{font-family:'Fraunces',serif;color:#fff;font-size:1rem;font-weight:600}
+.flinks{display:flex;gap:2px;flex-wrap:wrap}
+.flinks a{color:rgba(255,255,255,.28);font-size:.75rem;padding:4px 9px;border-radius:6px;transition:all .18s}
+.flinks a:hover{color:var(--sky);background:rgba(255,255,255,.04)}
+.fcopy{text-align:center;color:rgba(255,255,255,.18);font-size:.72rem;padding-top:16px;border-top:1px solid rgba(255,255,255,.04)}
+
+/* ════════════════════
+   REVEAL
+════════════════════ */
+.r{opacity:1;transform:none}
+.js-ready .r{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js-ready .r.v{opacity:1;transform:none}
+.js-ready .r.d1{transition-delay:.07s}
+.js-ready .r.d2{transition-delay:.14s}
+.js-ready .r.d3{transition-delay:.21s}
+
+/* ════════════════════
+   RESPONSIVE
+════════════════════ */
+@media(max-width:980px){
+  nav{padding:0 4%}
+  .nav-links{
+    display:none;position:absolute;top:60px;left:0;right:0;
+    background:rgba(7,9,14,.97);backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+    padding:10px 4%;flex-direction:column;gap:2px;
+    box-shadow:0 12px 32px rgba(0,0,0,.4);
+  }
+  .nav-links.open{display:flex}
+  .hbg{display:flex}
+  .sec{padding:64px 4%}
+  .hero-wrap{grid-template-columns:1fr;gap:32px;padding:60px 4%}
+  .hero-photo{display:none}
+  .about-g{grid-template-columns:1fr}
+  .dual-grid,.mini-kpis{grid-template-columns:1fr}
+  .aside-sticky{position:static}
+  .img-trio{grid-template-columns:1fr}
+  .rec-g{grid-template-columns:1fr}
+  .ct-g{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+}
+@media(max-width:540px){
+  .ach-g,.kn-g,.sk-grid{grid-template-columns:1fr}
+  .h-nums{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- ▓▓▓▓ NAVBAR ▓▓▓▓ -->
+<nav id="nav">
+  <div class="logo">
+    <div class="logo-mark">AK</div>
+    Ashok Kumar Reddy
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#knowledge">Projects</a>
+    <a href="#recruiter">Recruiters</a>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </div>
+  <div class="hbg" id="hbg" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ▓▓▓▓ HERO ▓▓▓▓ -->
+<section id="home">
+  <div class="hero-canvas">
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600&q=80&auto=format&fit=crop" alt="port operations" loading="eager"/>
+    </div>
+    <div class="orb1"></div>
+    <div class="orb2"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <div class="hero-wrap">
+    <!-- Left -->
+    <div>
+      <div class="h-eyebrow"><span class="pulse"></span>Open to Opportunities · Bengaluru</div>
+      <h1 class="h1">Ashok Kumar<br><em>Reddy</em></h1>
+      <p class="h-role">Import &amp; Export Documentation Specialist · EXIM Executive</p>
+      <div class="h-flags">
+        <span class="flag-pill fp-in">🇮🇳&nbsp;India EXIM Expert</span>
+        <span class="flag-pill fp-ca">🇨🇦&nbsp;Canada Import Exp.</span>
+      </div>
+      <p class="h-desc">4+ years managing end-to-end trade documentation across India &amp; Canada — BOE filing, IDPMS/EDPMS, CBSA procedures &amp; CARM compliance. Precision-driven, compliance-focused.</p>
+      <div class="h-nums">
+        <div class="hnum"><div class="hnum-n">4+</div><div class="hnum-l">Years Exp.</div></div>
+        <div class="hnum"><div class="hnum-n">2</div><div class="hnum-l">Countries</div></div>
+        <div class="hnum"><div class="hnum-n">13K+</div><div class="hnum-l">Shipments/Mo</div></div>
+        <div class="hnum"><div class="hnum-n">99%</div><div class="hnum-l">Accuracy</div></div>
+      </div>
+      <div class="h-btns">
+        <a href="Ashok_Kumar_Reddy_Resume-2026.pdf" download class="btn-p"><i class="fas fa-download"></i>Download Resume</a>
+        <a href="#contact" class="btn-g"><i class="fas fa-envelope"></i>Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Right Card -->
+    <div>
+      <div class="pcard">
+        <div class="pc-av">AK</div>
+        <div class="pc-name">Ashok Kumar Reddy</div>
+        <div class="pc-role">EXIM Documentation Specialist</div>
+        <div class="pc-chips">
+          <span class="chip">Import Docs</span>
+          <span class="chip">BOE Processing</span>
+          <span class="chip">IDPMS/EDPMS</span>
+          <span class="chip">CBSA · Canada</span>
+          <span class="chip">Customs Clearance</span>
+          <span class="chip">Freight Forwarding</span>
+        </div>
+        <div class="pc-div"></div>
+        <div class="pc-row"><i class="fas fa-envelope"></i><a href="mailto:ashokkumarreddy416@gmail.com">ashokkumarreddy416@gmail.com</a></div>
+        <div class="pc-row"><i class="fas fa-phone"></i><a href="tel:+918466977081">+91 84669 77081</a></div>
+        <div class="pc-row"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/ashok-kumar-a1152521a/" target="_blank">linkedin.com/in/ashok-kumar-a1152521a</a></div>
+        <div class="pc-row"><i class="fas fa-briefcase"></i><a href="https://www.naukri.com/mnjuser/profile" target="_blank">Naukri Profile</a></div>
+        <div class="pc-row"><i class="fas fa-map-marker-alt"></i>Bengaluru, Karnataka, India</div>
+        <div class="pc-badge">
+          <i class="fas fa-circle-check"></i>
+          <span><strong>Actively Looking</strong> — EXIM / Import-Export / Logistics · Bengaluru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ ABOUT ▓▓▓▓ -->
+<section id="about" class="sec">
+  <div class="inner">
+    <div class="ew r"><span class="ew-bar"></span>About Me</div>
+    <h2 class="st r">EXIM Professional with<br>India &amp; Canada Experience</h2>
+    <div class="about-g">
+      <div class="at">
+        <p class="r">I am <strong>Ashok Kumar Reddy</strong>, an Import &amp; Export Documentation Specialist with over <strong>4 years of hands-on experience</strong> at Invensis Technologies Pvt. Ltd., managing trade documentation and logistics operations for <strong>1,000+ monthly Canada-bound shipments</strong> across Toronto and Montreal lanes.</p>
+        <p class="r d1">In <strong>India</strong>, I bring deep expertise in the complete import documentation lifecycle — BOE filing on ICEGATE, AD Code registration, IDPMS/EDPMS reporting, FEMA compliance, and coordination with CHA agents and freight forwarders.</p>
+        <p class="r d2">In <strong>Canada</strong>, I have direct hands-on experience with CBSA procedures, B3 customs entry filing, CARM compliance, Canadian HS tariff classification, and managing licensed customs brokers for smooth clearances across Toronto &amp; Montreal.</p>
+        <div class="dual-grid r d3">
+          <div class="dc dc-in">
+            <h4>🇮🇳 India EXIM</h4>
+            <ul>
+              <li>BOE / ICEGATE filing</li>
+              <li>IDPMS &amp; EDPMS</li>
+              <li>AD Code · FEMA</li>
+              <li>CHA coordination</li>
+              <li>DGFT compliance</li>
+            </ul>
+          </div>
+          <div class="dc dc-ca">
+            <h4>🇨🇦 Canada Import</h4>
+            <ul>
+              <li>CBSA procedures</li>
+              <li>B3 entry filing</li>
+              <li>CARM compliance</li>
+              <li>Canadian HS codes</li>
+              <li>GST/HST on imports</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mini-kpis">
+          <div class="mk r"><i class="fas fa-file-invoice"></i><h4>BOE Processing</h4><p>ICEGATE filing &amp; tracking</p></div>
+          <div class="mk r d1"><i class="fas fa-landmark"></i><h4>DGFT Compliance</h4><p>IDPMS, EDPMS, AD Code</p></div>
+          <div class="mk r d2"><i class="fas fa-ship"></i><h4>Freight Coordination</h4><p>Ocean, Air &amp; Truck modes</p></div>
+          <div class="mk r d3"><i class="fas fa-globe"></i><h4>Dual-Country EXIM</h4><p>India &amp; Canada expertise</p></div>
+        </div>
+      </div>
+      <div class="aside-sticky r d1">
+        <div class="aside-card">
+          <h3>Core Knowledge Areas</h3>
+          <div class="krow"><div class="kr-ico"><i class="fas fa-file-contract"></i></div><div><h4>Import Documentation (India)</h4><p>Full lifecycle: invoice, packing list, BL/AWB, COO, BOE filing and customs forms</p></div></div>
+          <div class="krow"><div class="kr-ico" style="background:rgba(200,16,46,.1);color:var(--ca)"><i class="fas fa-flag"></i></div><div><h4>Canada Import (CBSA)</h4><p>B3 entry, CARM compliance, Canadian HS tariff, broker management</p></div></div>
+          <div class="krow"><div class="kr-ico"><i class="fas fa-gavel"></i></div><div><h4>Customs Clearance</h4><p>HS codes, duty structures, CHA/broker coordination — both countries</p></div></div>
+          <div class="krow"><div class="kr-ico"><i class="fas fa-university"></i></div><div><h4>Banking &amp; FEMA</h4><p>AD Code, outward remittances, FEMA-compliant documentation</p></div></div>
+          <div class="krow"><div class="kr-ico"><i class="fas fa-database"></i></div><div><h4>IDPMS / EDPMS</h4><p>Import &amp; Export monitoring, entries and RBI reconciliation</p></div></div>
+        </div>
+        <div class="aside-img">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&auto=format&fit=crop" alt="documentation" loading="lazy"/>
+          <div class="aside-img-lbl"><i class="fas fa-shield-halved"></i>100% Compliance Focus</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ SKILLS ▓▓▓▓ -->
+<section id="skills" class="sec sec-alt">
+  <div class="inner">
+    <div class="ew r"><span class="ew-bar"></span>Competencies</div>
+    <h2 class="st r">Skills &amp; Expertise</h2>
+    <p class="ss r">Covering Indian and Canadian EXIM documentation, trade compliance, logistics operations, and stakeholder management.</p>
+    <div class="img-trio r d1">
+      <div class="itc"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80&auto=format&fit=crop" alt="Ocean Freight" loading="lazy"/><div class="itc-lbl">🚢 Ocean Freight</div></div>
+      <div class="itc"><img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=80&auto=format&fit=crop" alt="Air Cargo" loading="lazy"/><div class="itc-lbl">✈️ Air Cargo</div></div>
+      <div class="itc"><img src="https://images.unsplash.com/photo-1568234928966-359c35dd8327?w=600&q=80&auto=format&fit=crop" alt="Trade Documentation" loading="lazy"/><div class="itc-lbl">📋 Documentation</div></div>
+    </div>
+    <div class="sk-grid">
+      <div class="sk r"><div class="sk-top"><div class="sk-ic"><i class="fas fa-file-invoice-dollar"></i></div><h3>Import Documentation</h3></div><p>End-to-end import paperwork — commercial invoice, packing list, BL, AWB, COO, and customs forms for India and Canada.</p><div class="bar-track"><div class="bar-fill" style="--w:93%"></div></div><div class="bar-meta"><span class="bar-lvl">Expert</span><span class="bar-pct">93%</span></div><span class="sk-tag tg-bo"><i class="fas fa-globe"></i>&nbsp;India &amp; Canada</span></div>
+      <div class="sk r d1"><div class="sk-top"><div class="sk-ic"><i class="fas fa-receipt"></i></div><h3>Bill of Entry (BOE)</h3></div><p>Filing, verifying and tracking BOE through ICEGATE; coordinating with CHA agents for customs queries.</p><div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div><div class="bar-meta"><span class="bar-lvl">Expert</span><span class="bar-pct">92%</span></div><span class="sk-tag tg-in">🇮🇳&nbsp;India</span></div>
+      <div class="sk r d2"><div class="sk-top"><div class="sk-ic" style="background:rgba(200,16,46,.08)"><i class="fas fa-passport" style="color:var(--ca)"></i></div><h3>Canada CBSA Import</h3></div><p>CBSA procedures, B3 entry filing, CARM compliance, Canadian HS tariff classification, and broker coordination.</p><div class="bar-track"><div class="bar-fill" style="--w:85%;background:linear-gradient(90deg,var(--ca),#E74C3C)"></div></div><div class="bar-meta"><span class="bar-lvl" style="color:var(--ca)">Advanced</span><span class="bar-pct">85%</span></div><span class="sk-tag tg-ca">🇨🇦&nbsp;Canada</span></div>
+      <div class="sk r"><div class="sk-top"><div class="sk-ic"><i class="fas fa-code-branch"></i></div><h3>AD Code &amp; FEMA</h3></div><p>AD Code registration with authorised dealer banks; FEMA compliance for all import/export payment reporting.</p><div class="bar-track"><div class="bar-fill" style="--w:87%"></div></div><div class="bar-meta"><span class="bar-lvl">Advanced</span><span class="bar-pct">87%</span></div><span class="sk-tag tg-in">🇮🇳&nbsp;India</span></div>
+      <div class="sk r d1"><div class="sk-top"><div class="sk-ic"><i class="fas fa-database"></i></div><h3>IDPMS / EDPMS</h3></div><p>Import &amp; Export Data Processing and Monitoring System entries, reconciliation, and RBI/FEMA reporting.</p><div class="bar-track"><div class="bar-fill" style="--w:89%"></div></div><div class="bar-meta"><span class="bar-lvl">Advanced</span><span class="bar-pct">89%</span></div><span class="sk-tag tg-in">🇮🇳&nbsp;India</span></div>
+      <div class="sk r d2"><div class="sk-top"><div class="sk-ic"><i class="fas fa-ship"></i></div><h3>Freight Forwarding</h3></div><p>Coordination with freight forwarders, airlines, and shipping lines for Ocean, Air &amp; Truck modes across both markets.</p><div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div><div class="bar-meta"><span class="bar-lvl">Advanced</span><span class="bar-pct">88%</span></div><span class="sk-tag tg-bo"><i class="fas fa-globe"></i>&nbsp;India &amp; Canada</span></div>
+      <div class="sk r"><div class="sk-top"><div class="sk-ic"><i class="fas fa-stamp"></i></div><h3>Customs Clearance</h3></div><p>HS codes, duty structures, exemptions, and coordination for swift clearances across both countries' customs.</p><div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div><div class="bar-meta"><span class="bar-lvl">Expert</span><span class="bar-pct">90%</span></div><span class="sk-tag tg-bo"><i class="fas fa-globe"></i>&nbsp;India &amp; Canada</span></div>
+      <div class="sk r d1"><div class="sk-top"><div class="sk-ic"><i class="fas fa-chart-bar"></i></div><h3>MIS &amp; Reporting</h3></div><p>Excel dashboards, KPI reports, shipment monitoring tools, and documentation performance tracking systems.</p><div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div><div class="bar-meta"><span class="bar-lvl">Advanced</span><span class="bar-pct">88%</span></div><span class="sk-tag tg-bo"><i class="fas fa-globe"></i>&nbsp;India &amp; Canada</span></div>
+      <div class="sk r d2"><div class="sk-top"><div class="sk-ic"><i class="fas fa-handshake"></i></div><h3>Stakeholder Communication</h3></div><p>Effective coordination with customs, CHAs, banks, shipping lines, vendors, and international teams.</p><div class="bar-track"><div class="bar-fill" style="--w:91%"></div></div><div class="bar-meta"><span class="bar-lvl">Expert</span><span class="bar-pct">91%</span></div><span class="sk-tag tg-bo"><i class="fas fa-globe"></i>&nbsp;India &amp; Canada</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ EXPERIENCE ▓▓▓▓ -->
+<section id="experience" class="sec">
+  <div class="inner">
+    <div class="ew r"><span class="ew-bar"></span>Career</div>
+    <h2 class="st r">Professional Experience</h2>
+    <p class="ss r">4+ years of EXIM documentation and logistics operations — managing Canada-bound shipments from Bengaluru, India.</p>
+    <div class="exp-wrap r">
+      <div class="exp-card">
+        <div class="exp-banner">
+          <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1400&q=80&auto=format&fit=crop" alt="Container Port" loading="lazy"/>
+          <div class="exp-banner-content">
+            <div>
+              <p>Current Role · Jan 2022 – Present</p>
+              <h2>Import &amp; Export Documentation Coordinator<br>/ Logistics Operations Lead</h2>
+            </div>
+          </div>
+        </div>
+        <div class="exp-body">
+          <div class="ep-row">
+            <span class="ep ep-a">Jan 2022 – Present</span>
+            <span class="ep ep-b">Current Role</span>
+            <span class="ep ep-c">🇮🇳 Bengaluru, India</span>
+          </div>
+          <div class="exp-co">
+            <div class="exp-co-icon">IT</div>
+            <div class="exp-co-name">Invensis Technologies Pvt. Ltd.</div>
+          </div>
+          <div class="exp-loc-row"><i class="fas fa-location-dot"></i>Bengaluru, Karnataka, India</div>
+          <ul class="exp-ul">
+            <li>Managed end-to-end import documentation for 1,000+ monthly Canada-bound shipments across Toronto and Montreal lanes</li>
+            <li>Coordinated with International Stakeholders, freight forwarders, and internal teams for smooth cargo clearance (Ocean &amp; Air &amp; Truck)</li>
+            <li>Verified Bill of Lading, commercial invoices, packing lists, HS codes, and shipping documents prior to customs filing</li>
+            <li>Maintained 98–99% documentation accuracy with only 0.7% CBSA regulatory penalties</li>
+            <li>Reduced clearance delays and exception resolution time by 30% through process improvements and automation</li>
+            <li>Developed Excel dashboards and KPI reports for shipment monitoring and documentation performance</li>
+            <li>Tracked shipment ETA and ensured timely cargo release and delivery performance</li>
+            <li>Conducted daily quality audits and monthly compliance reviews, sustaining 98–99% first-pass accuracy for over 12 consecutive months</li>
+            <li>Mentored documentation team members and improved team productivity and compliance awareness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ ACHIEVEMENTS ▓▓▓▓ -->
+<section id="achievements" class="sec sec-alt">
+  <div class="inner">
+    <div class="ew r"><span class="ew-bar"></span>Impact</div>
+    <h2 class="st r">Key Achievements</h2>
+    <p class="ss r">Measurable results at Invensis Technologies — 4+ years of consistent high-performance documentation operations.</p>
+    <div class="ach-g">
+      <div class="ach ach-go r">
+        <div class="ach-glow"></div>
+        <div class="ach-num">98–99%</div>
+        <div class="ach-label">First-Pass Documentation Accuracy</div>
+        <div class="ach-desc">Sustained for over 12 consecutive months through daily quality audits and compliance reviews</div>
+      </div>
+      <div class="ach ach-bl r d1">
+        <div class="ach-glow"></div>
+        <div class="ach-num">30%</div>
+        <div class="ach-label">Reduction in Clearance Delays</div>
+        <div class="ach-desc">Achieved through documentation automation and systematic process improvements</div>
+      </div>
+      <div class="ach ach-gr r d2">
+        <div class="ach-glow"></div>
+        <div class="ach-num">25%</div>
+        <div class="ach-label">Lower Demurrage &amp; Storage Costs</div>
+        <div class="ach-desc">Using ETA-based shipment planning to reduce port detention and storage charges</div>
+      </div>
+      <div class="ach ach-rd r d3">
+        <div class="ach-glow"></div>
+        <div class="ach-num">13,000+</div>
+        <div class="ach-label">Shipment Transactions / Month</div>
+        <div class="ach-desc">Processed monthly with only 1% compliance penalties — consistently high-volume operations</div>
+      </div>
+    </div>
+    <div class="ach-banner r">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&q=80&auto=format&fit=crop" alt="Cargo port" loading="lazy"/>
+      <div class="ach-banner-txt">
+        <span>Invensis Technologies Pvt. Ltd. · Jan 2022 – Present</span>
+        <h3>1,000+ Monthly Canada-Bound Shipments</h3>
+        <p>Toronto &amp; Montreal Lanes · Ocean, Air &amp; Truck</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ KNOWLEDGE ▓▓▓▓ -->
+<section id="knowledge" class="sec">
+  <div class="inner">
+    <div class="ew r"><span class="ew-bar"></span>Domain Expertise</div>
+    <h2 class="st r">Knowledge &amp; Initiatives</h2>
+    <p class="ss r">Deep expertise across Indian and Canadian EXIM processes, compliance frameworks, and documentation systems.</p>
+    <div class="kn-g">
+      <div class="kn r">
+        <div class="kn-img"><img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=600&q=75&auto=format&fit=crop" alt="India Port" loading="lazy"/></div>
+        <div class="kn-body">
+          <div class="kn-ico"><i class="fas fa-route"></i></div>
+          <h3>India Import Process Mapping</h3>
+          <p>Full SOP covering the Indian import lifecycle — PO placement, proforma invoice, freight booking, BOE filing, customs clearance, IDPMS closure and bank reconciliation.</p>
+          <div class="kn-tags"><span class="knt">Import SOP</span><span class="knt">BOE Tracking</span><span class="knt">ICEGATE</span></div>
+        </div>
+      </div>
+      <div class="kn kn-ca r d1">
+        <div class="kn-img"><img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=75&auto=format&fit=crop" alt="Canada customs" loading="lazy"/></div>
+        <div class="kn-body">
+          <div class="kn-ico"><i class="fas fa-flag"></i></div>
+          <h3>Canada CBSA Import Framework</h3>
+          <p>Practical CBSA procedures — B3 entry filing, CARM compliance, Canadian tariff classification (Schedule I), duty/GST/HST calculations, and customs broker management.</p>
+          <div class="kn-tags"><span class="knt knt-ca">CBSA/CARM</span><span class="knt knt-ca">B3 Entry</span><span class="knt knt-ca">Canadian HS</span><span class="knt knt-ca">GST/HST</span></div>
+        </div>
+      </div>
+      <div class="kn r d2">
+        <div class="kn-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=75&auto=format&fit=crop" alt="MIS Dashboard" loading="lazy"/></div>
+        <div class="kn-body">
+          <div class="kn-ico"><i class="fas fa-table"></i></div>
+          <h3>Shipment Tracking MIS Dashboard</h3>
+          <p>Excel-based MIS tracker for real-time shipment status, pending BOE filings, duty payments, and IDPMS reconciliation — reducing missed deadlines significantly.</p>
+          <div class="kn-tags"><span class="knt">MIS Reporting</span><span class="knt">Excel Automation</span><span class="knt">KPI Reports</span></div>
+        </div>
+      </div>
+      <div class="kn r">
+        <div class="kn-img"><img src="https://images.unsplash.com/photo-1568234928966-359c35dd8327?w=600&q=75&auto=format&fit=crop" alt="Trade documents" loading="lazy"/></div>
+        <div class="kn-body">
+          <div class="kn-ico"><i class="fas fa-search-dollar"></i></div>
+          <h3>Duty Optimisation — India &amp; Canada</h3>
+          <p>Indian BCD, IGST, advance authorisation, EPCG — combined with Canadian tariff relief, CETA/CPTPP preferential rates, and duty drawback for cost savings.</p>
+          <div class="kn-tags"><span class="knt">BCD/IGST</span><span class="knt">EPCG/AA</span><span class="knt knt-ca">CETA/CPTPP</span></div>
+        </div>
+      </div>
+      <div class="kn r d1">
+        <div class="kn-img"><img src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?w=600&q=75&auto=format&fit=crop" alt="Banking" loading="lazy"/></div>
+        <div class="kn-body">
+          <div class="kn-ico"><i class="fas fa-university"></i></div>
+          <h3>Banking &amp; FEMA Compliance</h3>
+          <p>Checklist-based framework for outward remittances, AD Code maintenance, and FEMA-compliant documentation — zero bank queries and timely payments.</p>
+          <div class="kn-tags"><span class="knt">FEMA</span><span class="knt">AD Code</span><span class="knt">RBI Reporting</span></div>
+        </div>
+      </div>
+      <div class="kn r d2">
+        <div class="kn-img"><img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=75&auto=format&fit=crop" alt="Air cargo" loading="lazy"/></div>
+        <div class="kn-body">
+          <div class="kn-ico"><i class="fas fa-globe-asia"></i></div>
+          <h3>Export Documentation (India)</h3>
+          <p>Shipping bill, EDPMS, letter of credit, FIRC management, and export incentive schemes including RoDTEP and Duty Drawback for full EXIM team support.</p>
+          <div class="kn-tags"><span class="knt">Shipping Bill</span><span class="knt">EDPMS</span><span class="knt">LC/FIRC</span><span class="knt">RoDTEP</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ FOR RECRUITERS ▓▓▓▓ -->
+<section id="recruiter" class="sec sec-alt" style="position:relative;overflow:hidden">
+  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=60&auto=format&fit=crop" alt="global" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.04"/>
+  <div class="inner" style="position:relative;z-index:1">
+    <div class="ew r"><span class="ew-bar"></span>For Recruiters</div>
+    <h2 class="st r">Why Hire Ashok?</h2>
+    <p class="ss r">4+ years · India &amp; Canada EXIM · Available immediately · Bengaluru-based.</p>
+    <div class="rec-g">
+      <div class="rc r">
+        <h3><i class="fas fa-bullseye"></i>Roles I'm Targeting</h3>
+        <div class="role-list">
+          <div class="ri"><i class="fas fa-check-circle"></i>Import Documentation Executive</div>
+          <div class="ri"><i class="fas fa-check-circle"></i>Export Documentation Executive</div>
+          <div class="ri"><i class="fas fa-check-circle"></i>EXIM Executive</div>
+          <div class="ri"><i class="fas fa-check-circle"></i>Logistics Documentation Executive</div>
+          <div class="ri"><i class="fas fa-check-circle"></i>Customs Documentation Specialist</div>
+          <div class="ri"><i class="fas fa-check-circle"></i>Trade Compliance Executive</div>
+        </div>
+      </div>
+      <div class="rc r d1">
+        <h3><i class="fas fa-sliders"></i>Work Preferences</h3>
+        <div class="pref-row"><div class="pr-ic"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><p>Bengaluru, Karnataka (open to hybrid)</p></div></div>
+        <div class="pref-row"><div class="pr-ic"><i class="fas fa-briefcase"></i></div><div><h4>Employment Type</h4><p>Full-time positions preferred</p></div></div>
+        <div class="pref-row"><div class="pr-ic"><i class="fas fa-building"></i></div><div><h4>Industry</h4><p>Manufacturing · Trading · Logistics · Freight Forwarding · E-commerce</p></div></div>
+        <div class="pref-row"><div class="pr-ic"><i class="fas fa-calendar-check"></i></div><div><h4>Availability</h4><p>Available immediately / short notice period</p></div></div>
+      </div>
+      <div class="avail-bar r">
+        <div>
+          <h3>🟢 Actively Open to Opportunities</h3>
+          <p>4+ years · India &amp; Canada EXIM · 98–99% accuracy · Bengaluru · Ready to join now</p>
+        </div>
+        <div class="avail-btns">
+          <a href="Ashok_Kumar_Reddy_Resume-2026.pdf" download class="btn-p" style="background:#fff;color:var(--night);box-shadow:none"><i class="fas fa-download"></i>Resume</a>
+          <a href="#contact" class="btn-g"><i class="fas fa-envelope"></i>Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ CONTACT ▓▓▓▓ -->
+<section id="contact" class="sec">
+  <div class="inner">
+    <div class="ew r"><span class="ew-bar"></span>Get In Touch</div>
+    <h2 class="st r">Contact Ashok</h2>
+    <p class="ss r">Reach out for job opportunities or to schedule an interview. I respond promptly.</p>
+    <div class="ct-g">
+      <div class="r">
+        <h3 style="font-family:'Fraunces',serif;font-size:1.1rem;color:#fff;margin-bottom:20px;font-weight:600">Direct Contact</h3>
+        <div class="ci"><div class="ci-ico"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="mailto:ashokkumarreddy416@gmail.com">ashokkumarreddy416@gmail.com</a></div></div>
+        <div class="ci"><div class="ci-ico"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><a href="tel:+918466977081">+91 84669 77081</a></div></div>
+        <div class="ci"><div class="ci-ico"><i class="fab fa-linkedin"></i></div><div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/ashok-kumar-a1152521a/" target="_blank">linkedin.com/in/ashok-kumar-a1152521a</a></div></div>
+        <div class="ci"><div class="ci-ico"><i class="fas fa-briefcase"></i></div><div><h4>Naukri</h4><a href="https://www.naukri.com/mnjuser/profile" target="_blank">View Naukri Profile</a></div></div>
+        <div class="ci"><div class="ci-ico"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><span>Bengaluru, Karnataka, India</span></div></div>
+        <div class="ci"><div class="ci-ico"><i class="fas fa-download"></i></div><div><h4>Resume</h4><a href="Ashok_Kumar_Reddy_Resume-2026.pdf" download>Download Full Resume (PDF)</a></div></div>
+      </div>
+      <div class="cf r d1">
+        <h3>Send a Message</h3>
+        <div id="cform">
+          <div class="frow">
+            <div class="fg"><label>Your Name *</label><input type="text" id="fn" placeholder="Recruiter / HR Name"/></div>
+            <div class="fg"><label>Company *</label><input type="text" id="fc" placeholder="Company Name"/></div>
+          </div>
+          <div class="fg"><label>Email *</label><input type="email" id="fe" placeholder="your@company.com"/></div>
+          <div class="fg"><label>Role You're Hiring For</label>
+            <select id="fr">
+              <option value="">Select a role...</option>
+              <option>Import Documentation Executive</option>
+              <option>Export Documentation Executive</option>
+              <option>EXIM Executive</option>
+              <option>Logistics Documentation Executive</option>
+              <option>Trade Compliance Executive</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label>Message *</label><textarea id="fm" placeholder="Tell Ashok about the opportunity..."></textarea></div>
+          <button class="fsub" onclick="sendMsg()"><i class="fas fa-paper-plane"></i>Send Message</button>
+        </div>
+        <div class="fok" id="fok">
+          <i class="fas fa-circle-check"></i>
+          <strong>Message Sent!</strong>
+          <span>Ashok will get back to you very soon.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▓▓▓▓ FOOTER ▓▓▓▓ -->
+<footer>
+  <div class="fi">
+    <div class="fi-top">
+      <div class="fbrand">Ashok Kumar Reddy</div>
+      <div class="flinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+        <a href="#experience">Experience</a><a href="#achievements">Achievements</a>
+        <a href="#knowledge">Projects</a><a href="#recruiter">Recruiters</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="fcopy">© 2026 Ashok Kumar Reddy · EXIM Documentation Specialist · Bengaluru, India · India &amp; Canada EXIM Experience</div>
+  </div>
+</footer>
+
+<script>
+/* ── Navbar ── */
+const nav=document.getElementById('nav');
+const secs=['home','about','skills','experience','achievements','knowledge','recruiter','contact'];
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('solid',scrollY>10);
+  let cur='home';
+  secs.forEach(id=>{const el=document.getElementById(id);if(el&&scrollY>=el.offsetTop-75)cur=id});
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+},{passive:true});
+
+/* ── Mobile nav ── */
+function toggleNav(){
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hbg').classList.toggle('o');
+}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('hbg').classList.remove('o');
+}));
+
+/* ── Reveal ── */
+document.body.classList.add('js-ready');
+const ro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.r').forEach(el=>ro.observe(el));
+
+/* ── Skill bars ── */
+const bo=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.querySelectorAll('.bar-fill').forEach(b=>b.classList.add('go'));bo.unobserve(x.target)}})},{threshold:.2});
+document.querySelectorAll('.sk').forEach(c=>bo.observe(c));
+
+/* ── Contact form ── */
+function sendMsg(){
+  const n=document.getElementById('fn').value.trim();
+  const e=document.getElementById('fe').value.trim();
+  const m=document.getElementById('fm').value.trim();
+  if(!n||!e||!m){alert('Please fill in Name, Email and Message.');return}
+  document.getElementById('cform').style.display='none';
+  document.getElementById('fok').style.display='block';
+}
+</script>
+</body>
+</html>
