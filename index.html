@@ -654,7 +654,7 @@ footer{background:#050710;border-top:1px solid rgba(255,255,255,.05);padding:24p
           <span class="chip">Freight Forwarding</span>
         </div>
         <div class="pc-div"></div>
-        <div class="pc-row"><i class="fas fa-envelope"></i><a href="mailto:ashokkumarreddy416@gmail.com">ashokkumarreddy416@gmail.com</a></div>
+        <div class="pc-row"><i class="fas fa-envelope"></i><a href="/cdn-cgi/l/email-protection#5435273c3b3f3f21393526263130302d606562143339353d387a373b39"><span class="__cf_email__" data-cfemail="3a5b49525551514f575b48485f5e5e430e0b0c7a5d575b535614595557">[email&#160;protected]</span></a></div>
         <div class="pc-row"><i class="fas fa-phone"></i><a href="tel:+918466977081">+91 84669 77081</a></div>
         <div class="pc-row"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/ashok-kumar-a1152521a/" target="_blank">linkedin.com/in/ashok-kumar-a1152521a</a></div>
         <div class="pc-row"><i class="fas fa-briefcase"></i><a href="https://www.naukri.com/mnjuser/profile" target="_blank">Naukri Profile</a></div>
@@ -952,7 +952,7 @@ footer{background:#050710;border-top:1px solid rgba(255,255,255,.05);padding:24p
     <div class="ct-g">
       <div class="r">
         <h3 style="font-family:'Fraunces',serif;font-size:1.1rem;color:#fff;margin-bottom:20px;font-weight:600">Direct Contact</h3>
-        <div class="ci"><div class="ci-ico"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="mailto:ashokkumarreddy416@gmail.com">ashokkumarreddy416@gmail.com</a></div></div>
+        <div class="ci"><div class="ci-ico"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="/cdn-cgi/l/email-protection#b4d5c7dcdbdfdfc1d9d5c6c6d1d0d0cd808582f4d3d9d5ddd89ad7dbd9"><span class="__cf_email__" data-cfemail="fa9b89929591918f979b88889f9e9e83cecbccba9d979b9396d4999597">[email&#160;protected]</span></a></div></div>
         <div class="ci"><div class="ci-ico"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><a href="tel:+918466977081">+91 84669 77081</a></div></div>
         <div class="ci"><div class="ci-ico"><i class="fab fa-linkedin"></i></div><div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/ashok-kumar-a1152521a/" target="_blank">linkedin.com/in/ashok-kumar-a1152521a</a></div></div>
         <div class="ci"><div class="ci-ico"><i class="fas fa-briefcase"></i></div><div><h4>Naukri</h4><a href="https://www.naukri.com/mnjuser/profile" target="_blank">View Naukri Profile</a></div></div>
@@ -1008,45 +1008,44 @@ footer{background:#050710;border-top:1px solid rgba(255,255,255,.05);padding:24p
 
 <script>
 /* ── Contact Form ── */
-function sendMsg(){
-  const name = document.getElementById('fn').value.trim();
+async function sendMsg(){
+  const name    = document.getElementById('fn').value.trim();
   const company = document.getElementById('fc').value.trim();
-  const email = document.getElementById('fe').value.trim();
-  const role = document.getElementById('fr').value;
-  const msg = document.getElementById('fm').value.trim();
+  const email   = document.getElementById('fe').value.trim();
+  const role    = document.getElementById('fr').value;
+  const msg     = document.getElementById('fm').value.trim();
+  const btn     = document.querySelector('.fsub');
 
   if(!name){alert('Please enter your name.');return;}
-  if(!email || !email.includes('@')){alert('Please enter a valid email.');return;}
-  if(!msg){alert('Please enter a message.');return;}
+  if(!email||!email.includes('@')){alert('Please enter a valid email address.');return;}
+  if(!msg){alert('Please write a message.');return;}
 
-  // Build mailto link so message goes directly to Ashok's Gmail
-  const subject = encodeURIComponent('Job Opportunity from ' + name + (company ? ' (' + company + ')' : ''));
-  const body = encodeURIComponent(
-    'Hi Ashok,
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-' +
-    'Name: ' + name + '
-' +
-    'Company: ' + (company || 'Not specified') + '
-' +
-    'Email: ' + email + '
-' +
-    'Role: ' + (role || 'Not specified') + '
-
-' +
-    'Message:
-' + msg + '
-
-' +
-    'Sent via your portfolio website.'
-  );
-
-  // Open Gmail/email client with pre-filled message
-  window.location.href = 'mailto:ashokkumarreddy416@gmail.com?subject=' + subject + '&body=' + body;
-
-  // Show success message
-  document.getElementById('cform').style.display = 'none';
-  document.getElementById('fok').style.display = 'flex';
+  try {
+    const res = await fetch('https://formspree.io/f/xwvropya', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify({
+        name:    name,
+        company: company || 'Not specified',
+        _replyto: email,
+        role:    role || 'Not specified',
+        message: msg
+      })
+    });
+    if(res.ok){
+      document.getElementById('cform').style.display = 'none';
+      document.getElementById('fok').style.display   = 'flex';
+    } else {
+      throw new Error('Server error');
+    }
+  } catch(err){
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    alert('Message could not be sent automatically.\nPlease email directly: ashokkumarreddy416@gmail.com');
+  }
 }
 
 /* ── Navbar ── */
@@ -1062,13 +1061,4 @@ window.addEventListener('scroll',()=>{
 /* ── Mobile nav ── */
 function toggleNav(){
   document.getElementById('navLinks').classList.toggle('open');
-  document.getElementById('hbg').classList.toggle('o');
-}
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{
-  document.getElementById('navLinks').classList.remove('open');
-  document.getElementById('hbg').classList.remove('o');
-}));
-
-/* ── Reveal ── */
-document.body.classList.add('js-ready');
-const ro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v'
+  document.getElementB
